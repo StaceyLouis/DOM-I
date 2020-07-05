@@ -40,3 +40,46 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let navBar = document.querySelector('nav');
+
+let ctaImg = document.querySelector('#cta-img');
+ctaImg.setAttribute('src', siteContent['cta']['img-src']);
+
+let middleImg = document.querySelector('#middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+let link = document.body.getElementsByTagName("a")[0].innerHTML="Services";
+let link1 = document.body.getElementsByTagName("a")[1].innerHTML="Product";
+let link2 = document.body.getElementsByTagName("a")[2].innerHTML="Vision";
+let link3 = document.body.getElementsByTagName("a")[3].innerHTML="Features";
+let link4 = document.body.getElementsByTagName("a")[4].innerHTML="About";
+let link5 = document.body.getElementsByTagName("a")[5].innerHTML="Contact";
+
+let jumbo = document.querySelector('.cta-text h1').innerHTML = 'DOM IS AWESOME';
+let start = document.querySelector('button').innerHTML="Get Started";
+
+let content = document.querySelector('.top-content');
+content.getElementsByTagName('h4')[0].innerHTML= siteContent['main-content']['features-h4'];
+content.getElementsByTagName('p')[0].innerHTML= siteContent['main-content']['features-content'];
+content.getElementsByTagName('h4')[1].innerHTML= siteContent['main-content']['about-h4'];
+content.getElementsByTagName('p')[1].innerHTML= siteContent['main-content']['about-content'];
+
+let bottom = document.querySelector('.bottom-content');
+bottom.getElementsByTagName('h4')[0].innerHTML= siteContent['main-content']['services-h4'];
+bottom.getElementsByTagName('p')[0].innerHTML= siteContent['main-content']['services-content'];
+bottom.getElementsByTagName('h4')[1].innerHTML= siteContent['main-content']['product-h4'];
+bottom.getElementsByTagName('p')[1].innerHTML= siteContent['main-content']['product-content'];
+bottom.getElementsByTagName('h4')[2].innerHTML= siteContent['main-content']['vision-h4'];
+bottom.getElementsByTagName('p')[2].innerHTML= siteContent['main-content']['vision-content'];
+
+
+let contact = document.querySelector('.contact');
+contact.getElementsByTagName("h4")[0].innerHTML = siteContent['contact']['contact-h4'];
+contact.getElementsByTagName("p")[0].innerHTML = siteContent['contact']['address'];
+contact.getElementsByTagName("p")[1].innerHTML = siteContent['contact']['phone'];
+contact.getElementsByTagName("p")[2].innerHTML = siteContent['contact']['email'];
+
+let footerText = document.querySelector("footer p").innerHTML= siteContent['footer']['copyright'];
+
+
