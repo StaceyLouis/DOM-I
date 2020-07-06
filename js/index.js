@@ -100,3 +100,10 @@ contact.getElementsByTagName("p")[2].innerHTML = siteContent['contact']['email']
 let footerText = document.querySelector("footer p").innerHTML= siteContent['footer']['copyright'];
 
 
+// stretch goals
+let buttonD = document.querySelector("button");
+console.log(buttonD);
+buttonD.addEventListener("click", function(){
+  buttonD.style.backgroundColor = "red";
+  alert('Thanks for clicking');
+});
