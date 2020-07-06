@@ -42,6 +42,23 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 let navBar = document.querySelector('nav');
+let navItemA = document.createElement('a');
+navItemA.textContent = 'Media';
+navItemA.setAttribute('href', '#');
+
+let navItemB = document.createElement('a');
+
+
+navBar.appendChild(navItemA);
+
+navBar.prepend('Home', navItemB);
+
+  let x, i;
+  x = document.querySelectorAll("a");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.color = "green";
+  }
+
 
 let ctaImg = document.querySelector('#cta-img');
 ctaImg.setAttribute('src', siteContent['cta']['img-src']);
